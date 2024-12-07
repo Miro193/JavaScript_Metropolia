@@ -31,9 +31,8 @@ document.addEventListener('submit', async function (evt) {
             article.appendChild(figure);
 
             const i = document.createElement('img');
-            i.src = tvShow['show']['image']['medium'];
+            i.src = tvShow['show']['image']?.['medium'];
             i.alt = tvShow['show']['name'];
-            i.src?.alt;
             figure.appendChild(i);
         };
     } catch (error) {
